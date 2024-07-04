@@ -1,0 +1,26 @@
+uuid: 4525c0d8-3b7f-4f15-b186-df3bcc0c27af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_features
+    - filter.format.basic_html
+    - filter.format.plain_text
+    - node.type.products
+  module:
+    - text
+id: node.products.field_features
+field_name: field_features
+entity_type: node
+bundle: products
+label: Features
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+    - plain_text
+field_type: text_long

@@ -1,0 +1,15 @@
+uuid: 3aab5148-c64e-4503-87de-39160ae9c064
+langcode: en
+status: true
+dependencies: {  }
+name: small
+label: Small
+effects:
+  a1358a55-3932-4c81-9c04-098023063d35:
+    uuid: a1358a55-3932-4c81-9c04-098023063d35
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

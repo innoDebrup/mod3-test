@@ -1,0 +1,38 @@
+uuid: 61177fb5-cd25-42e9-bc41-26345d9a76a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.thumbnail
+  module:
+    - media
+    - media_gallery
+    - text
+id: media_gallery.media_gallery.default
+targetEntityType: media_gallery
+bundle: media_gallery
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  images:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  created: true
+  status: true
+  title: true
+  uid: true

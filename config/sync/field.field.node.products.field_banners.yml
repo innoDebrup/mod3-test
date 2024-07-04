@@ -1,0 +1,34 @@
+uuid: d072f219-d609-4323-9678-7e80e4407a87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banners
+    - node.type.products
+    - paragraphs.paragraphs_type.product_banner
+  module:
+    - entity_reference_revisions
+id: node.products.field_banners
+field_name: field_banners
+entity_type: node
+bundle: products
+label: Banners
+description: 'Banner Section'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      product_banner: product_banner
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 3
+        enabled: false
+      product_banner:
+        weight: 4
+        enabled: true
+field_type: entity_reference_revisions

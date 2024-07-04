@@ -1,0 +1,9 @@
+uuid: c4ff56ca-bb55-4790-8cf8-0f631311fe6b
+langcode: en
+status: true
+dependencies: {  }
+name: 'Product Type'
+vid: product_type
+description: 'Product type vocabulary'
+weight: 0
+new_revision: false

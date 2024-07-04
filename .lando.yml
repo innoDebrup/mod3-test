@@ -1,0 +1,6 @@
+name: mod3-test
+recipe: drupal10
+config:
+  webroot: web
+  via: nginx
+  php: 8.2

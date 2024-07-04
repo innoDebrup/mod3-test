@@ -1,0 +1,37 @@
+uuid: a42e1241-b3af-4611-a91f-ba35fb91cbf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.webform
+    - paragraphs.paragraphs_type.banner
+  module:
+    - entity_reference_revisions
+id: node.webform.field_banner
+field_name: field_banner
+entity_type: node
+bundle: webform
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      banner: banner
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 4
+        enabled: true
+      partners:
+        weight: 5
+        enabled: false
+      product_banner:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

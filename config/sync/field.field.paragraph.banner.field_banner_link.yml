@@ -1,0 +1,23 @@
+uuid: e960cba2-00ba-4b04-9754-f2e2d9e79aa0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_banner_link
+    - paragraphs.paragraphs_type.banner
+  module:
+    - link
+id: paragraph.banner.field_banner_link
+field_name: field_banner_link
+entity_type: paragraph
+bundle: banner
+label: 'Banner Link'
+description: 'Redirect Link of the banner.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link
