@@ -1,0 +1,10 @@
+uuid: 1b0c808b-55e3-42a6-9b35-3b3e1a48121b
+langcode: en
+status: true
+dependencies: {  }
+id: product_banner
+label: 'Product Banner'
+icon_uuid: null
+icon_default: null
+description: 'Banner component for product type.'
+behavior_plugins: {  }

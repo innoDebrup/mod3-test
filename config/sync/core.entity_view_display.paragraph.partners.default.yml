@@ -1,0 +1,27 @@
+uuid: d776abcf-0dec-40bb-975a-36e72d41fc6d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.partners.field_logos
+    - image.style.medium
+    - paragraphs.paragraphs_type.partners
+  module:
+    - media
+id: paragraph.partners.default
+targetEntityType: paragraph
+bundle: partners
+mode: default
+content:
+  field_logos:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

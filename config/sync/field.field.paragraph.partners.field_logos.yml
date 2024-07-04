@@ -1,0 +1,29 @@
+uuid: 551e0a80-9f6a-4fa7-8811-cb687b85e3df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_logos
+    - media.type.image
+    - paragraphs.paragraphs_type.partners
+id: paragraph.partners.field_logos
+field_name: field_logos
+entity_type: paragraph
+bundle: partners
+label: 'Partner Logos'
+description: 'Partner Logos'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

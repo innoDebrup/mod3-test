@@ -1,0 +1,25 @@
+uuid: 8796b931-4a19-4ddc-90ea-1bc9f835aafd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7a8f8619-7b56-43e6-af0d-05c6a91b3d9d'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: olivero_reachusat
+theme: olivero
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:7a8f8619-7b56-43e6-af0d-05c6a91b3d9d'
+settings:
+  id: 'block_content:7a8f8619-7b56-43e6-af0d-05c6a91b3d9d'
+  label: 'Reach us @'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

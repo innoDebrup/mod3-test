@@ -1,0 +1,10 @@
+uuid: 9b41aa0f-a3ea-4b77-a3fb-546621ad44ee
+langcode: en
+status: true
+dependencies: {  }
+id: partners
+label: Partners
+icon_uuid: null
+icon_default: null
+description: 'Partner Logos List'
+behavior_plugins: {  }

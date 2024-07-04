@@ -1,0 +1,25 @@
+uuid: eb98b68a-b1db-4139-986d-68da2df43ceb
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_block
+  theme:
+    - olivero
+id: olivero_copyrightblock
+theme: olivero
+region: footer_bottom
+weight: 0
+provider: null
+plugin: copyright_block
+settings:
+  id: copyright_block
+  label: 'Copyright block'
+  label_display: '0'
+  provider: copyright_block
+  start_year: '2024'
+  separator: '-[current-date:html_year][current-date:html_year]'
+  text:
+    value: '<p>Copyright Innoraft Solutions Pvt. Ltd. All rights reserved [current-date:html_year].</p>'
+    format: basic_html
+visibility: {  }
