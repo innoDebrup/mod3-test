@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.webform.body
+    - field.field.node.webform.field_banner
     - field.field.node.webform.webform
     - node.type.webform
   module:
+    - entity_reference_revisions
     - text
     - user
     - webform
@@ -18,22 +20,33 @@ bundle: webform
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
+    region: content
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: content
   webform:
-    weight: 102
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
     type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }
